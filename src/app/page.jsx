@@ -5,7 +5,7 @@ export default async function HomePage() {
 
   return (
     <>
-    
+    <h2>this is master branch</h2>
     </>
   );
 }
