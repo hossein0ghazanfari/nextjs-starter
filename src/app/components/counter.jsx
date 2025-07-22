@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment } from '../_lib/_redux/counterSlicer'
 // import { increment, decrement } from '@/lib/redux/counterSlice'
 
+// TODO: migrate to zustand
 export default function Counter() {
     const value = useSelector((state) => state.counter.value)
     const dispatch = useDispatch()
