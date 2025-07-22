@@ -1,18 +1,16 @@
-export const metadata = {
-  title: "TaskHub",
-  description: "اپلیکیشن مدیریت تسک‌ها با Next.js",
-};
+'use client'
+import './globals.css'
+import { Provider } from 'react-redux';
+import { store } from './_lib/_redux/store'
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fa">
-      <body style={{ fontFamily: "sans-serif", padding: "2rem" }}>
-        <header>
-          <h1 style={{ color: "darkblue" }}>🌟 TaskHub</h1>
-          <hr />
-        </header>
-        <main>{children}</main>
+    <html lang="en">
+      <body>
+        <Provider store={store}>
+          {children}
+        </Provider>
       </body>
     </html>
-  );
+  )
 }

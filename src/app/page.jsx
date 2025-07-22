@@ -1,12 +1,9 @@
-import Link from "next/link";
-
-
-export default async function HomePage() {
-
+import Counter from "./components/counter";
+export default function Page() {
   return (
-    <>
-    <h2>this is master branch</h2>
-    </>
-  );
+    <div>
+      <h1 className="text-color">صفحه اصلی</h1>
+      <Counter />
+    </div>
+  )
 }
-
